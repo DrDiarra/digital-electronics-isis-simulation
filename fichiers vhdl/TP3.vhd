@@ -1,0 +1,21 @@
+library ieee ;
+use ieee.std_logic_1164.all ;
+Entity f1 is
+	Port(	a : in std_logic;
+         b : in std_logic;
+         c : in std_logic;
+		   s : out std_logic;
+		   r : out std_logic
+   );
+end f1;
+
+--description concurrente?
+
+architecture rtl of f1 is 
+begin
+	s <= (a xor b ) xor c;
+	r <= (a and b ) or (c and a ) or (c and b);
+end rtl;
+
+---les entrées sont a, b et c ---
+---les sorties sont s et r ---

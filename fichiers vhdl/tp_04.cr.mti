@@ -1,0 +1,8 @@
+C:/altera/81/modelsim_ae/win32aloem/tp_04.vhd {1 {vcom -work work -2002 -explicit C:/altera/81/modelsim_ae/win32aloem/tp_04.vhd
+Model Technology ModelSim ALTERA vcom 6.3g_p1 Compiler 2008.08 Aug 13 2008
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity comp4bit
+-- Compiling architecture rr of comp4bit
+
+} {} {}}

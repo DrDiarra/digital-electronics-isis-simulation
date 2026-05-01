@@ -1,0 +1,82 @@
+%SIGNAL
+PIN   2 =  I0 
+PIN   3 =  I1 
+PIN   4 =  I2 
+PIN   5 =  I3 
+PIN  17 =  a0 
+PIN  18 =  a1 
+PIN  19 =  a2 
+PIN  20 =  a3 
+PIN  21 =  a4 
+PIN  22 =  a5 
+PIN  23 =  a6 
+%END
+
+%FIELD
+FIELD input = I3,I2,I1,I0
+FIELD output = a6,a5,a4,a3,a2,a1,a0
+%END
+
+%EQUATION
+a0 =>
+    !I1 & !I2 & I3
+  # I1 & !I2 & !I3
+  # !I1 & I2 & !I3
+  # !I0 & I1 & I2 & !I3
+
+a1 =>
+    I0 & !I1 & !I3
+  # !I1 & !I2 & I3
+  # !I0 & I2 & !I3
+
+a2 =>
+    I0 & !I1 & !I2 & !I3
+  # !I0 & I1 & !I3
+  # !I0 & !I1 & !I2 & I3
+
+a3 =>
+    !I1 & !I2 & I3
+  # I1 & !I2 & !I3
+  # I0 & !I1 & I2 & !I3
+  # !I0 & I1 & I2 & !I3
+
+a4 =>
+    !I1 & !I2 & I3
+  # I0 & I1 & !I3
+  # !I1 & I2 & !I3
+  # !I0 & I1 & I2 & !I3
+
+a5 =>
+    !I1 & !I2 & I3
+  # I1 & !I2 & !I3
+  # !I0 & !I1 & I2 & !I3
+  # I0 & I1 & I2 & !I3
+
+a6 =>
+    !I1 & !I2 & I3
+  # I1 & !I2 & !I3
+  # I0 & I2 & !I3
+  # !I0 & I1 & I2 & !I3
+
+a0.oe  =>
+    1 
+
+a1.oe  =>
+    1 
+
+a2.oe  =>
+    1 
+
+a3.oe  =>
+    1 
+
+a4.oe  =>
+    1 
+
+a5.oe  =>
+    1 
+
+a6.oe  =>
+    1 
+
+%END

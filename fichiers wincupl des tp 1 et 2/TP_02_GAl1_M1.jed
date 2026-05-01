@@ -1,0 +1,19 @@
+
+CUPL(WM)        5.0a  Serial# 60008009
+Device          g22v10  Library DLIB-h-40-1
+Created         Fri Jan 17 21:22:33 2020
+Name            TP_02_GAl1_M1 
+Partno          00 
+Revision        01 
+Date            26/11/2019 
+Designer        Engineer 
+Company         DrD-TECH 
+Assembly        None 
+Location        
+*QP24 
+*QF5892 
+*G0 
+*F0 
+*L05824 00000011000000110000001000000000
+*C01C0
+*5939

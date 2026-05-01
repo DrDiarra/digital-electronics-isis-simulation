@@ -1,0 +1,20 @@
+Name     tp_01fpga ;
+PartNo   00 ;
+Date     20/01/2020 ;
+Revision 01 ;
+Designer Engineer ;
+Company  DrD-TECH ;
+Assembly None ;
+Location  ;
+Device   g22v10 ;
+
+/* *************** OUTPUT PINS *********************/
+PIN    2 = a                        ; /*                                 */ 
+PIN    3 = b                       ; /*                                 */ 
+
+/* *************** PINNODES    *********************/
+PINNODE   17  =  y1                    ; /*                                 */ 
+PINNODE   18  =    y2                  ; /*                                 */ 
+
+y1.d = a&b;
+y2.d=a#b;

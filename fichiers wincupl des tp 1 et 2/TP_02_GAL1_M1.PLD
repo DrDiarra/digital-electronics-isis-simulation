@@ -1,0 +1,22 @@
+Name     TP_02_GAl1_M1 ;
+PartNo   00 ;
+Date     26/11/2019 ;
+Revision 01 ;
+Designer Engineer ;
+Company  DrD-TECH ;
+Assembly None ;
+Location  ;
+Device   g22v10 ;
+
+/***********GAL1*/
+
+pin 23 = Qa;
+pin 22 = Qb;
+pin 21 = Qc;
+pin 20 = Qd;
+
+Qa.d = (!Qd)&(!Qb)&(Qa) # (!Qb)&(!Qa)&(!Qd);
+Qb.d = (!Qa)&(Qc)&(!Qd) # (!Qb)&(Qc)&(!Qd) # (!Qc)&(Qa)&(Qb)&(!Qd);
+Qc.a = (Qc)&(Qb)&(Qa)&(!Qd) # (Qd)&(!Qa)&(!Qb)&(!Qc);
+
+

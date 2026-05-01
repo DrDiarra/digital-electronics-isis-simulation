@@ -1,0 +1,31 @@
+Name     TP_2_GAL2_M1 ;
+PartNo   00 ;
+Date     26/11/2019 ;
+Revision 01 ;
+Designer Engineer ;
+Company  DrD-TECH ;
+Assembly None ;
+Location  ;
+Device   g22v10 ;
+
+/****GAL2*/
+pin [2..5] = [I0..I3];
+pin [17..23] = [a0..a6];
+field input = [I3..I0];
+field output = [a6..a0];
+table input => output{
+	
+	1 => 'b'0000110;
+	2 => 'b'1101101; 
+	3 => 'b'1111001;
+	4 => 'b'0110011;
+	5 => 'b'1011011;
+	6 => 'b'1011111;
+	7 => 'b'1110000;
+	8 => 'b'1111111;
+	9 => 'b'1111011;
+	
+}
+
+
+

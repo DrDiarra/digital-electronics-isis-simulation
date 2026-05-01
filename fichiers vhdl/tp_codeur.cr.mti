@@ -1,0 +1,9 @@
+C:/altera/81/modelsim_ae/win32aloem/tp_codeur.vhd {0 {vcom -work work -2002 -explicit C:/altera/81/modelsim_ae/win32aloem/tp_codeur.vhd
+Model Technology ModelSim ALTERA vcom 6.3g_p1 Compiler 2008.08 Aug 13 2008
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity codeur4_2
+** Error: C:/altera/81/modelsim_ae/win32aloem/tp_codeur.vhd(6): Labels do not match: 'codeur4_2' and 'codeur'.
+** Error: C:/altera/81/modelsim_ae/win32aloem/tp_codeur.vhd(6): VHDL Compiler exiting
+
+} {6.0 8.0} {}}

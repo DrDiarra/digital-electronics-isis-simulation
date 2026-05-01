@@ -1,0 +1,11 @@
+library ieee;
+use ieee.std_logic_1164.all;
+    entity add is
+        port(a, b, c : in std_logic;
+            s, r : out std_logic);
+    end add;
+    architecture rr of add is
+    begin
+        r<=(a and c) or (b and c) or (a and b and c);
+        s<=a xor b xor c;
+   end rr;

@@ -1,0 +1,25 @@
+%SIGNAL
+PIN   2 =  a 
+PIN   3 =  b 
+PIN  17 =  y1 
+PIN  18 =  y2 
+%END
+
+%FIELD
+%END
+
+%EQUATION
+y1.d  =>
+    a & b
+
+y2.d  =>
+    a
+  # b
+
+y1.oe  =>
+    1 
+
+y2.oe  =>
+    1 
+
+%END

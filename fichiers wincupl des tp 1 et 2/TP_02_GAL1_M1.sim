@@ -1,0 +1,12 @@
+%SIGNAL
+PIN  23 =  Qa 
+PIN  22 =  Qb 
+PIN  21 =  Qc 
+PIN  20 =  Qd 
+%END
+
+%FIELD
+%END
+
+%EQUATION
+%END
